@@ -198,7 +198,7 @@ input, select, textarea {
 	h2, h3, h4, h5, h6 {
 		font-weight: 900;
 		line-height: 1.5;
-		margin: 0 0 2em 0;
+		margin: 0 0 1.4em 0;
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
@@ -311,7 +311,27 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+     
+	/* Flaired edges, by Tomas Theunissen */
 
+hr.style-seven {
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.style-seven:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
 /* Row */
 
 	.row {
@@ -2367,7 +2387,7 @@ input, select, textarea {
 				.image.main {
 					margin: 0 0 2em 0;
 				}
-
+                 
 			}
 
 /* Table */
@@ -2408,7 +2428,7 @@ input, select, textarea {
 		}
 
 		table tfoot {
-			border-top: solid 2px #c9c9c9;
+			border-top: solid 2px  #4d97de;;
 		}
 
 		table.alt {
@@ -2582,7 +2602,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
+			width: calc(75% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2858,6 +2878,15 @@ input, select, textarea {
 					width: 2em;
 					height: 2em;
 				}
+				#header .logo .symbol {
+					margin-right: 0.65em;
+				}
+	
+					#header .logo .symbolimg {
+						display: block;
+						width: 4em;
+						height: 4em;
+					}
 
 		#header nav {
 			position: fixed;
